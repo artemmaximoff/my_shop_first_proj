@@ -7,7 +7,7 @@ import { ModalContext } from "../context/modalcontext"
 import { ConfirmDelete } from "../components/confirmdelete"
 import { Modal } from "./modal";
 import { useNavigate } from "react-router-dom";
-import React from "react";
+
 
 
 export const ProductProfileInfo = ({ setEditMode, profile, error }) => {
