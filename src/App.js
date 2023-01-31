@@ -6,7 +6,6 @@ import { About } from "./pages/about";
 import { ProductProfile } from './components/productProfile'
 import { Login } from './components/login'
 import { Navigate } from "react-router-dom";
-
 import { PrivateRoutes } from './utils/private_router'
 
 function App() {
@@ -20,14 +19,11 @@ function App() {
           <Route exact path='/' element={<Navigate to="/products" />} />
           <Route path="/products" element={<ProductPage />}></Route>
           <Route path='products/product/:productId' element={<ProductProfile />} />
-
         </Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path="/about" element={<About />}></Route>
-
-
+        <Route path='/login' element={<Login />} />
+        <Route exact path='/*' element={<Navigate to="/login" />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-
     </>
 
   );
