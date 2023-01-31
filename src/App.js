@@ -1,5 +1,4 @@
 import React from "react";
-import { useProucts } from "./hooks/useProducts";
 import { ProductPage } from './pages/productpage'
 import { Navigation } from "./components/navigation";
 import { Route, Routes } from "react-router-dom";
