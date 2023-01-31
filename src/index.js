@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'
-import { ModalContext, ModalState } from './context/modalcontext';
+import { ModalState } from './context/modalcontext';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { rootReducer } from './redux/rootReducer';
